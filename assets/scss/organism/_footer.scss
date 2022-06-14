@@ -1,0 +1,16 @@
+.footer {
+    width: 100%;
+    img {
+        width: 100%;
+        max-width: 1168px;
+        margin: 0 auto;
+        display: block;
+    }
+    p {
+        margin-top: 2em;
+        background: $lightblack;
+        color: $yellow;
+        padding: 2em 0;
+        text-align: center;
+    }
+}

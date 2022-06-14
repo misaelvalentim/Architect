@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+// Regular text
+@mixin PoppinsRegular {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+// Semibolded text
+@mixin PoppinsSemiBold {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+// Bold text
+@mixin PoppinsBold {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;    
+}
+

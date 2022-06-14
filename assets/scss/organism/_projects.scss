@@ -1,0 +1,75 @@
+.projects {
+
+    h2 {
+        font-size: 1.5em;
+        text-align: center;
+        padding: 2em 0 1em;
+        margin: 0 .5em;
+        border-bottom: 0.1px;
+        border-style: solid;
+        border-color: lighten($lightblack, 65%);
+        @include PoppinsSemiBold;
+        @media only screen and (min-width: 600px) {
+            margin: 0 1em;
+        }
+        @include tablet {
+            text-align: left;
+        }
+        @include desktop {
+            max-width: 1168px;
+            margin: 0 auto;
+        }
+    }
+
+    &__galery {
+        padding-top: 2em;
+        flex-grow: 1;
+        column-gap: 10px;
+        row-gap: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 .5em;
+        @media only screen and (min-width: 600px) {
+            margin: 0 1em;
+        }
+        @include desktop {
+            max-width: 1168px;
+            margin: 0 auto;
+        }
+        .galery__summer, .galery__brick, .galery__renovated, .galery__barn {
+            flex-grow: 1;
+            position: relative;
+        }
+        .galery__summer::before, .galery__brick::before, .galery__renovated::before, .galery__barn::before {
+            position: absolute;
+            width: fit-content;
+            text-align: center;
+            color: $yellow;
+            background: $lightblack;
+            top: 0;
+            left: 0;
+            padding: .5em;
+        }
+        .galery__summer::before {
+            content:'Summer House';
+        }
+        .galery__brick::before {
+            content: 'Brick house';
+        }
+        .galery__renovated::before {
+            content: 'Renovated house';
+        }
+        .galery__barn::before {
+            content: 'Barn house';
+        }
+        img {
+            min-width: 100%;
+            @media only screen and (min-width: 600px) {
+                max-width: 260px;
+            }
+            @media only screen and (min-width: 900px) {
+                max-width: 282px;
+            }
+        }
+    }
+}

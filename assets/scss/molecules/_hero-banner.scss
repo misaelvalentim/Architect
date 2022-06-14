@@ -1,0 +1,23 @@
+.header__banner {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-top: .25em;
+    h1 {
+        color: $gray;
+        font-size: 2em;
+        position: absolute;
+        align-self: center;
+        span {
+            font-weight: bold;
+            background: rgba(0, 0, 1, .60);
+            padding: .2em .5em;
+        }
+    }
+    img {
+        width: 100%;
+        max-width: 1168px;
+        margin: 0;
+        min-height: 350px;
+    }
+}

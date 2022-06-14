@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architect</title>
+    <link rel="shortcut icon" href="assets/images/icon/builder.png" type="image/x-icon">
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+<body>
+    <div class="loading"></div>
+    <header class="header">
+        <div class="header__wrapper">
+            <nav class="header__nav">
+                <div class="nav__wrapper">
+                    <a href="#" class="header__logo">BR Architects</a>
+                    <ul class="header__menu" role="menu">
+                        <li class="menu__list"><a href="#" class="menu__item">Home</a></li>
+                        <li class="menu__list"><a href="#projects" class="menu__item">Projects</a></li>
+                        <li class="menu__list"><a href="#about" class="menu__item">About</a></li>
+                        <li class="menu__list"><a href="#contact" class="menu__item">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="header__hamburger"></i>
+                <a href="#" class="scrollTopButton" role="menu"></a>
+            </nav>
+        </div>
+        <section class="header__banner" tabindex="0">
+            <img src="/assets/images/architect.jpg" alt="Architects hero banner">
+            <h1><span>BR</span> Architects</h1>
+        </section>
+    </header>
+    <main class="main">
+        <section id="projects" class="projects" aria-hidden="false" role="alertdialog" tabindex="0">
+            <h2>Projects</h2>
+            <div class="projects__galery">
+                <div class="galery__summer">
+                    <img src="assets/images/house1.jpg" alt="Summer house">
+                </div>
+                <div class="galery__brick">
+                    <img src="assets/images/house2.jpg" alt="Brick House">
+                </div>
+                <div class="galery__renovated">
+                    <img src="assets/images/house3.jpg" alt="Renovated House">
+                </div>
+                <div class="galery__barn">
+                    <img src="assets/images/house4.jpg" alt="Barn House">
+                </div>
+                <div class="galery__summer">
+                    <img src="assets/images/house1.jpg" alt="Summer house">
+                </div>
+                <div class="galery__brick">
+                    <img src="assets/images/house2.jpg" alt="Brick House">
+                </div>
+                <div class="galery__renovated">
+                    <img src="assets/images/house3.jpg" alt="Renovated House">
+                </div>
+                <div class="galery__barn">
+                    <img src="assets/images/house4.jpg" alt="Barn House">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about" aria-hidden="false" role="alertdialog" tabindex="0" aria-label="About section">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempore veritatis fugiat fuga labore eaque, tempora reiciendis atque explicabo perspiciatis totam praesentium nobis in maxime non alias molestias nam debitis!</p>
+            <div class="about__company">
+                <div class="company__employee">
+                    <img src="assets/images/john.jpg" alt="Employee John Doe" tabindex="0" aria-label="Employee John Doe">
+                    <h3>John Doe</h3>
+                    <h5>CEO & Founder</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro magni pariatur amet rerum ducimus voluptatibus aliquam?.</p>
+                    <button>Contact</button>
+                </div>
+                <div class="company__employee">
+                    <img src="assets/images/jane.jpg" alt="Employee Jane" tabindex="0" aria-label="Employee Jane">
+                    <h3>Jane Doe</h3>
+                    <h5>Architect</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro magni pariatur amet rerum ducimus voluptatibus aliquam?.</p>
+                    <button>Contact</button>
+                </div>
+                <div class="company__employee">
+                    <img src="assets/images/mike.jpg" alt="Mike Ross" tabindex="0" aria-label="Employee Mike Ross">
+                    <h3>Mike Ross</h3>
+                    <h5>Project Director</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro magni pariatur amet rerum ducimus voluptatibus aliquam?.</p>
+                    <button>Contact</button>
+                </div>
+                <div class="company__employee">
+                    <img src="assets/images/dan.jpg" alt="Employee Dan Star" tabindex="0" aria-label="Employee Dan Star">
+                    <h3>Dan Star</h3>
+                    <h5>Software Engineer</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro magni pariatur amet rerum ducimus voluptatibus aliquam?.</p>
+                    <button>Contact</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact us</h2>
+            <div class="contact__us">
+                <p>Lets get in touch and talk about your next project.</p>
+                <button>Send a message</button>
+            </div>
+            <div class="contact__form" aria-label="Contact us by filling out this form" role="alertdialog" tabindex="0">
+                <form action="https://www.google.com/" method="get" class="form" role="application">
+                    <span class="form__close" tabindex="0" aria-label="Close form button" aria-hidden="true">X <span aria-hidden="false" style="font-size: 0; visibility: hidden;">Close form button</span></span>
+                    <h3>Contact  form</h3>
+                    <label for="name">Name</label>
+                    <input type="text" name="form__name" id="name" placeholder="Name" required>
+                    <label for="email">Email</label>
+                    <input type="email" name="form__email" id="email" placeholder="Email" required>
+                    <label for="subject">Subject</label>
+                    <textarea name="subject" id="subject" class="form__subject" placeholder="Message" required></textarea>
+                    <input type="submit" vale="Send Message"class="form__submit">
+                </form>
+            </div>
+            </section>
+
+        <section class="map">
+        </section>
+    </main>
+    <footer class="footer">
+        <img src="assets/images/map.jpg" alt="Map" tabindex="0">
+        <p tabindex="0">All rights reserved &copy; Misael Valentim</p>
+    </footer>
+    <script src="dist/script.js"></script>
+</body>
+</html>

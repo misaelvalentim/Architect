@@ -1,0 +1,117 @@
+.about {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    h2 {
+        font-size: 1.5em;
+        text-align: center;
+        padding: 2em 0 1em;
+        margin: 0 8px;
+        border-bottom: 0.1px;
+        border-style: solid;
+        border-color: lighten($lightblack, 65%);
+        @include PoppinsSemiBold;
+
+        @media only screen and (min-width: 600px) {
+            margin: 0 16px;
+        }
+        @include tablet {
+            text-align: left;
+        }
+        @include desktop {
+            width: 1168px;
+            max-width: 1168px;
+            margin: 0 auto;
+        }
+    }
+
+    & > p {
+        margin: 0 .5em;
+        padding-top: 1em;
+        text-align: center;
+        @media only screen and (min-width: 600px) {
+            margin: 0 1em;
+        }
+        @include tablet {
+            text-align: left;
+        }
+        @include desktop {
+            width: 1168px;
+            max-width: 1168px;
+            margin: 0 auto;
+        }   
+    }
+
+    .about__company {
+        display: flex !important;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 1.5em;
+        margin: 0 .5em;
+        position: relative;
+        @media only screen and (min-width: 600px) {
+            column-gap: 10px;
+            margin: 0 1em;
+        }
+        @include desktop {
+            width: 1168px;
+            max-width: 1168px;
+            margin: 0 auto;
+        }
+        .company__employee{
+            width: 100%;
+            max-width: 100%;
+            flex-grow: 1;
+            @media only screen and (min-width: 600px) {
+                width: 250px;
+            }
+            @include tablet {
+                width: 353px;
+            }
+            @media only screen and (min-width: 1100px) {
+                width: 255px;
+            }
+
+            h3, h5, p {
+                flex-grow: inherit;
+                text-align: left;
+                padding-top: .5em;
+                font-size: 1em;
+                max-width: inherit;
+            }
+            
+            h3 {
+                font-size: 1.5em;
+                @include PoppinsSemiBold;
+            }
+
+            h5 {
+                opacity: .5;
+            }
+
+            button {
+                flex-grow: inherit;
+                max-width: inherit;
+                font-size: 1em;
+                margin: 1em 0;
+                color: $yellow;
+                background: $lightblack;
+                padding: .5em 0;
+                border: none;
+                width: 100%;
+                transition: all .2s linear;
+                cursor: pointer;
+                @include PoppinsRegular;
+                
+                &:hover, &:focus {
+                    background: $yellow;
+                    color: $lightblack;
+                }
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+}
